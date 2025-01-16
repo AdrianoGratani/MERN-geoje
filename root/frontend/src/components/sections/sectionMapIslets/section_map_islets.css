@@ -1,0 +1,55 @@
+.single_map_section_container_islets {
+    position: relative;
+}
+
+/* contextdata-based class */
+.is_icon_container {
+    padding: 4px;
+    border-radius:  10px;
+    background-color: var(--moon);
+    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+.is_icon_container:hover {
+    z-index: 1000;
+    padding: 15px;
+    border-radius:  30px;
+    background-color: var(--svg_islets);
+    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+
+} 
+
+.is_icon_effect {
+    z-index: 1000;
+    padding: 15px;
+    border-radius:  30px;
+    background-color: var(--svg_islets);
+    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+
+}
+
+@media screen and   (max-width: 600px)  {
+    
+        .single_map_section_container_islets {
+            margin-bottom: 23vh;
+        }
+
+    .geoje_land_svg {
+        width: 35vw;
+        min-width: inherit;
+        max-width: inherit;
+    }
+}
+
+@media screen and (min-width: 601px) {
+
+    .single_map_section_container_islets {
+        width: 35vw;
+        margin-bottom: 10vh;
+    }
+    
+    /* .geoje_land_svg {
+        width: 28vw;
+        min-width: inherit;
+        max-width: inherit;
+    } */
+}

@@ -1,0 +1,105 @@
+.text_and_cards_container {
+    /* background-color: red; */
+}
+
+/* section_text style: */
+.text_container {
+    /* width: 70vw; */
+    /* background-color: red; */
+}
+.dd{                
+    /* make text section disappear. */
+    height: 0px;
+    transition: height 0.5s ease-in-out;
+}
+
+.text_title {
+    font-size: 2rem;
+    padding: 15px;
+    text-align: center;
+    margin-top: var(--margin_small_h);
+    margin-bottom: var(--margin_small_h);
+}
+
+.text_subtitle {
+    height: 6vh;
+    text-align: center;
+    font-size: var(--size_subtitle);
+    margin-bottom: var(--margin_small_h);
+}
+
+.text_text {
+    font-family: var(--atkinson);
+    margin-right: var(--margin_smallbig_w);
+    margin-left: var(--margin_smallbig_w);
+    line-height: 35px;
+    font-size: 1.5rem;
+}
+
+/* ______________________________________________________________________________________________________________ */
+/* cards area container: */
+.cards_area_container {
+    /* background-color: blue; */
+    margin-top: var(--margin_small_h);
+    margin-bottom: var(--margin_small_h);
+    display: flex;
+    flex-flow: wrap;    
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    .text_container {
+        width: 100%;
+    }
+
+    /* NOT USED ANYMORE.. */
+    .text_title {
+        /* background-color: red; */
+        margin-top: 2px;
+        margin-bottom: 2px;
+        padding-bottom: 3px;
+        height: fit-content;
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+    .text_subtitle {
+        /* background-color: red; */
+        width: 100%;
+        height: fit-content;
+        font-size: 0.9rem;
+    }
+    .text_text {
+        line-height: 20px;
+        font-size: 1rem;
+        /* background-color: red; */
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and  (min-width: 601px) {
+
+    .text_and_cards_container {
+        margin-left: 5vw;
+        width: 65%;
+    }
+
+    .text_title {
+        font-size: 2.5vw;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .text_subtitle {
+        font-size: 2vw;
+        margin-bottom: 0;
+    }
+
+    .text_text {
+        text-align: center;
+        font-size: 1.5vw;
+    }
+
+}
+

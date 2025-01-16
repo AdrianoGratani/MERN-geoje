@@ -1,0 +1,39 @@
+.cloud_img_menu {
+    position: absolute;
+    /* the cloud is PNG. filter hue-rotate(deg arg) helps you change smoothly its color  */
+    filter: hue-rotate(180deg); 
+    width: 20vw;
+    height: auto;
+    background-color: var(--sky_rgba); 
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    z-index: 401;
+    /* more index than the cloud one */
+
+    transition: width 1s, height 1s, filter 1s;
+}
+
+.cloud_menu_text {
+    font-family: var(--playwrite);
+    position: absolute;
+    font-size: 3vw;
+    padding-bottom: 1vh;
+    background-color: var(--sky_rgba); 
+    top: 51vh;
+    left: 50.3vw;
+    transform: translate(-50%, -50%);
+    z-index: 402;
+    /* more index than the cloud itself */
+}
+
+.cloud_img_menu:hover {
+    filter: hue-rotate(-180deg); 
+    cursor: pointer;
+    width: 22vw;
+    height: auto;
+}
+
+.cloud_menu_text {
+    cursor: pointer;
+}

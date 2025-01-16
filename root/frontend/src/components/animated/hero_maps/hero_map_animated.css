@@ -1,0 +1,210 @@
+/* this class is assigned dynamically at each render: the animation it's __not__ 'infinite', also to avoid sync issues with the setInterval */
+/* animation timing __must__ be slightly (~100ms) longer than the setinterval */
+.svg_hero_map_container svg {
+    width: 25vw;
+    height: auto;   
+    animation: svg_opacity 3.7s ;
+    /* animation-timing-function: ease-in-out; */
+}
+
+/* this class is assigned dynamically at each render: the animation it's __not__ 'infinite', also to avoid sync issues with the setInterval */
+/* animation timing __must__ be slightly (~100ms) longer than the setinterval */
+.svg_hero_map_container_islets svg {
+    width: 35vw;
+    height: auto;
+    animation: svg_opacity 3.7s ;
+    /* animation-timing-function: ease-in-out;;    */
+}
+
+/* svg text: */
+.svg_hero_map_text_container {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg_hero_map_text_title {
+    opacity: 0.9;
+    font-size: var(--size_regular_big);
+    animation: text_opacity 3.5s infinite ease;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+}
+
+.hero_span {
+    display: flex;
+    flex-direction: row;
+    margin-right: 2px;
+}
+
+.hero_span_0 {
+    color: var(--svg_land);
+}
+.hero_span_1 {
+    color: var(--svg_beach);
+}
+.hero_span_2 {
+    color: var(--svg_islets);
+}
+
+/* icons:  */
+.svg_hero_map_text_icon {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.hero_icon {
+    width: 50px;
+    /* height: auto; */
+    animation: text_opacity 3.7s infinite ease;
+}
+
+.icon_1 {
+    color: var(--svg_land);
+    
+}
+.icon_2 {
+    color: var(--svg_beach);
+
+}
+.icon_3 {
+    color: var(--svg_islets);
+}
+
+@keyframes svg_opacity {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes text_opacity {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* colors of svg restored: */
+
+/* 1. GEOJE LAND MAP: svg path colors restored */
+/* second class is ONLY in the SVG FILE!!! */
+.svg_hero_map_container .color_land {
+    /* fill works, but affects the whole svg, one more class inside each svg path is needed. */
+    fill: rgb(122, 201, 67);     
+}
+
+.svg_hero_map_container .color_under {
+    /* fill works, but affects the whole svg, one more class inside each svg path is needed. */
+    fill: rgb(150, 150, 150);     
+}
+
+.svg_hero_map_container .color_single_mountain {
+    /* fill works, but affects the whole svg, one more class inside each svg path is needed. */
+    fill: rgb(244, 225, 80);     
+}
+
+.svg_hero_map_container .color_single_mountain_two {
+    /* fill works, but affects the whole svg, one more class inside each svg path is needed. */
+    fill: rgb(160, 206, 123);     
+}
+
+.svg_hero_map_container .color_single_mountain_three {
+    /* fill works, but affects the whole svg, one more class inside each svg path is needed. */
+    fill: rgb(43, 137, 64);     
+}
+
+
+/* 2. GEOJE Beach MAP: svg path colors restored */
+
+.svg_hero_map_container .color_seaside {
+    /* fill works, but affects the whole svg, one more class inside each svg path is needed. */
+    fill: rgb(63, 169, 245);     
+}
+
+.svg_hero_map_container .color_beach {
+    /* fill works, but affects the whole svg, one more class inside each svg path is needed. */
+    fill: rgb(252, 238, 33);     
+}
+
+
+/* 3. GEOJE Islets svg path colors restored */
+
+.svg_hero_map_container_islet .color_islets {
+    /* fill works, but affects the whole svg, one more class inside each svg path is needed. */
+    fill: rgb(63, 169, 245);     
+}
+
+.svg_hero_map_container_islet .color_islet_beach {
+    /* fill works, but affects the whole svg, one more class inside each svg path is needed. */
+    fill: rgb(252, 238, 33);     
+}
+
+.svg_hero_map_container_islet .color_island {
+    /* fill works, but affects the whole svg, one more class inside each svg path is needed. */
+    fill: rgb(200, 200, 200);     
+}
+
+.svg_hero_map_container_islet .color_island_shadow {
+    /* fill works, but affects the whole svg, one more class inside each svg path is needed. */
+    fill: rgb(230, 230, 230);     
+}
+
+@media screen and (max-width: 600px) {
+
+    .svg_hero_container {
+        width: 90vw;
+    }
+    .svg_hero_map_container svg{
+        width: 70vw;
+        max-width: 70vw;
+        overflow: visible;
+        margin-right: 0;
+    }
+    .svg_hero_map_container_islets svg {
+        width: 80vw;
+        max-width: 80vw;
+        overflow: visible;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1400px) {
+    .svg_hero_map_container, .svg_hero_map_container_islets {
+        margin-bottom: 4vh;
+    }
+    .svg_hero_map_container svg{
+        width: 20vw;
+        max-width: 20vw;
+    }
+    .svg_hero_map_container_islets svg {
+        width: 26vw;
+        max-width: 26vw;
+    }
+
+    .hero_text_container {
+        margin-top: 2vh;
+    }
+}

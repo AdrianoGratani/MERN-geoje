@@ -1,0 +1,70 @@
+.sun {
+    z-index: 2;
+    opacity: .8;
+    width: 7vw;
+    height: 7vw;
+    background-color: var(--sun);
+    border-radius: 50%;
+    position: absolute;
+    /* h v blur spread color  */
+    box-shadow: 0px 0px 40px 20px var(--sun);   
+    animation: animate_sun var(--moon_sun_night) infinite;
+    animation-timing-function: ease-in-out;
+    
+    /* :hover transition: */
+    transition: background-color 1s ease-in-out, box-shadow 0.6s ease-in-out;
+}
+
+/* set the color.           !!! on click > new page: play a typescript game set at night*/
+.sun:hover{
+    cursor: pointer;
+    background-color: var(--sunhover);
+    box-shadow: 0px 0px 40px 22px var(--sunhover);   
+}
+
+/* animation */
+/* https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
+@keyframes animate_sun {
+    
+    0%, 100% {
+         /* keep the hidden position */
+         top: 50vh;
+         right: -15vw;
+     }
+    20% {
+        /* INVISIBLE > VISIBLE sun reaches the stop point towards left. */
+        top: 10vh;
+        right: 50vw;
+        background-color: var(--sun);
+        box-shadow: 0px 0px 40px 20px var(--sun);   
+    }
+    30% {
+        /* VISIBLE sun remains in the stop point */
+        top: 10vh;
+        right: 50vw;
+    }
+    55% {
+        /* VISIBLE > INVISIBLE sun goes to bottom = evening. */
+        top: 110vh;
+        right: 70vw;
+        background-color: var(--evening);
+        box-shadow: 0px 0px 40px 20px var(--evening);   
+    }
+    
+    56% {
+        /* HIDDEN MOVEMENTS  */
+        /* move from the middle of vw to the the -10 SUN KEEPS STAYING IN THE BOTTOM */
+        top: 110vh;
+        right: -15vw;
+        background-color: var(--sun);
+        box-shadow: 0px 0px 40px 20px var(--sun);   
+    }
+    
+    57% {
+        /* HIDDEN MOVEMENTS  */
+        /* back to 0% position */
+        top: 50vh;
+        right: -15vw;
+       
+    }
+}

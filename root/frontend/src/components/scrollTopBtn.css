@@ -1,0 +1,46 @@
+.sbtn {
+    opacity: 1;
+
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    min-width: fit-content;
+    min-height:fit-content;
+    font-size: 2vw;
+    padding: 2vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    
+    background-color:hwb(0 100% 0% / 0.597);
+    color: rgb(7, 49, 12);
+    border-radius: 100%;
+    z-index: 1000;
+    
+    animation: b 1s ease-in-out infinite;
+}
+
+
+
+@keyframes b {
+    0%, 100%{
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        padding-right: 3vw;
+        padding-left: 3vw;
+    }
+    50% {
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        padding-right: 3.2vw;
+        padding-left: 3.2vw;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    .sbtn {
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        padding: 1vw;
+        font-size: 1rem;
+    }
+}

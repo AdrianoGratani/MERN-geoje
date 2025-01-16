@@ -1,0 +1,224 @@
+/* MAINLAND */
+
+.card_mainland_container {
+    position: relative;
+    font-family: var(--atkinson);
+    font-size: 2vh;
+    width: fit-content;
+    height: auto;
+    border-radius: var(--radius_cards);
+    background-color: var(--card_land);   
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+    transition: background-color 1s, width 0.05s;
+}
+
+.card_mainland_container:hover {
+    /* since there are many cards, if you reset width and height directly, on hovering, the other cards will shrink, and it's not nice. */
+    transform: scale(1.025);
+    background-color: var(--card_land_hover);   
+    border-radius: var(--radius_cards_hover);
+    transition: background-color 1s, transform 0.05s, border-radius 0.4s;
+}
+
+.icon_container {  /* for mainland*/
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    background-color: var(--card_icon_mainland);
+    border-radius: var(--radius_cards);
+}
+
+/* CONTEXT DATA TRIGGERS THIS CLASS BASED ON USER HOVER: */
+.m_card_effect{
+    background-color: var(--card_land_hover);
+}
+
+
+.card_name_mainland {
+    display: flex; 
+    gap: 5px;
+    padding-right: 2px;
+    border-radius: var(--radius_cards_hover);
+    background-color:var(--card_mainland_name);
+}
+
+.card_difficulty {
+    display: flex;
+    font-size: 2vh; 
+    gap: 5px;
+}
+
+.card_length {
+    display: flex;
+    font-size: 2vh; 
+    gap: 5px;
+}
+
+.card_duration {
+    display: flex;
+    font-size: 2vh; 
+    gap: 5px;
+}
+
+.card_additional_infos {
+    /* background-color: red; */
+    display: flex;
+    font-size: 2vh;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+/*    SEASIDE    */
+.card_seaside_container {
+    font-family: var(--atkinson);
+    font-size: 2vh;
+    width: fit-content;
+    height: auto;
+    border-radius: var(--radius_cards);
+    background-color: var(--card_sea);   
+    /* background-color: red;    */
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+    transition: background-color 1s, width 0.05s;
+}
+.card_seaside_container:hover {
+    /* since there are many cards, if you reset width and height directly, on hovering, the other cards will shrink, and it's not nice. */
+    transform: scale(1.025);
+    background-color: var(--card_sea_hover);   
+    border-radius: var(--radius_cards_hover);
+    transition: background-color 1s, transform 0.05s, border-radius 0.4s;
+}
+
+/* context triggered classes MUST go AFTER the default style class, otherwise they get read and immediately overridden */
+.s_card_effect{
+    background-color: var(--s_card_effect);
+}
+
+.icon_container_seaside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--card_icon_sea);
+    padding: 3px;
+    border-radius: var(--radius_cards);
+}
+
+.card_name_seaside {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    gap: 1px; 
+    background-color:  hwb(56 13% 1% / 0.445);
+ /* background-color: red; */
+}
+
+.card_name_seaside {
+    display: flex;
+    gap: 5px;
+}
+
+.card_sand {
+    display: flex;
+    font-size: 2.4vh;
+    gap: 5px;
+}
+
+.card_name_parking {
+    display: flex;
+    font-size: 2.4vh;
+    gap: 5px;
+}
+
+.card_name_cafes {
+    display: flex;
+    font-size: 2.4vh;
+    gap: 5px;
+}
+
+
+.card_additional_infos_sea {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+/* ISLETS */
+
+.card_islets_container {
+    font-family: var(--atkinson);
+    font-size: 2vh;
+    width: fit-content;
+    height: auto;
+    border-radius: var(--radius_cards);
+    background-color: var(--card_islets);   
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    transition: background-color 1s, width 0.05s;
+}
+
+.card_islets_container:hover {
+    /* since there are many cards, if you reset width and height directly, on hovering, the other cards will shrink, and it's not nice. */
+    transform: scale(1.025);
+    background-color: var(--card_islets_hover);   
+    border-radius: var(--radius_cards_hover);
+    transition: background-color 1s, transform 0.05s, border-radius 0.4s;
+}
+
+.icon_container_islets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--card_icon_islets);
+    padding: 3px;
+    border-radius: var(--radius_cards);
+}
+
+.card_name_islets {
+    border-radius: 15px;
+    padding-right: 2px;
+    display: flex;
+    gap: 10px; 
+ background-color:hwb(205 25% 4% / 0.459);
+}
+
+.card_name_islets {
+    display: flex;
+    gap: 10px;
+}
+
+.card_name_islets {
+    display: flex;
+    gap: 10px;
+}
+
+.card_name_bycar {
+    display: flex;
+    font-size: 2.4vh;
+    gap: 10px;
+}
+
+.card_name_bridge {
+    display: flex;
+    font-size: 2.4vh;
+    gap: 10px;
+}
+
+
+/* context triggered classes MUST go AFTER the default style class, otherwise they get read and immediately overridden */
+.is_card_effect{
+    background-color: var(--card_islets_effect);
+}

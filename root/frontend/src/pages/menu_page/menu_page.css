@@ -1,0 +1,223 @@
+html {
+    height: 100%;
+    overflow: scroll;
+}
+
+.body, .main{
+    background-color: var(--moon);
+    font-family: var(--playwrite);
+}
+
+
+/* ____header */
+.menu_page_header {
+    margin-bottom: var(--margin_small_h);
+}
+
+.menu_page_nav {
+    margin-top: var(--margin_small_h);
+    margin-left: var(--margin_small_w);
+    box-sizing: border-box;
+    
+}
+
+.menu_page_ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* in default state there is one li only for maps. */
+.menu_page_ul li {
+    /* background-color: red; */
+    box-sizing: border-box;
+    /* THIS margin affects the relation maps-icon */
+    margin-left: var(--margin_small_w);
+    font-size: var( --size_regular_big);
+    border-bottom: solid 1px  transparent;
+    transition: border-bottom 0.7s, margin-right 2s;
+    /* border box: ogni li element occupa solo lo spazio del suo testo */
+}
+
+.menu_page_ul li:nth-child(1):hover {
+    /* margin-right: var(--margin_small_w); */
+    border-bottom:  solid 1px black;
+    cursor: pointer;
+    transition: border-bottom 0.7s;
+}
+
+
+
+
+/* _____hero */
+
+.hero_container {
+    display: flex;
+    flex-direction: row;
+    /* gap: var(--margin_smallbig_w); */
+    /* margin-top: var(--margin_smallbig_h); */
+    /* margin-left: var(--margin_small_w);
+    margin-right: var(--margin_small_w); */
+}
+
+.hero_maps_and_description_container {
+    width: 50vw;
+    height: 100vh;
+}
+
+.hero_maps_container {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: var(--margin_smallbig_h); */
+}
+
+/* ____hero text  */
+
+.hero_text_container {
+    white-space: nowrap;
+    overflow: visible;
+    font-family: var(--merryweather);
+    font-size: var(--size_hero_big);
+
+    /* background-color: blue; */
+}
+
+.hero_geoje {
+    transition: color 2.5s;
+    font-size: 10rem;
+}
+
+.land {
+    color: var(--svg_land);
+}
+
+.beach {
+    color: var(--svg_beach) ;
+}
+
+.islets {
+    color: var(--svg_islets);
+}
+
+
+/* hero text description */
+.hero_text_description_container {
+    /* background-color: red; */
+    height: 20vh;
+    width: 20vh;
+}
+
+/* sections: */
+
+@media screen and (max-width: 600px) {
+ 
+    .hero_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height:92vh;
+        /* background-color: red; */
+
+    }
+    .menu_page_ul {
+        display: flex;
+        flex-direction: row;
+        gap: 50%;
+    }
+    .hero_geoje {
+        text-align: center;
+        /* background-color: red; */
+        width: 100%;
+        font-size: 20px;
+    }
+    
+    /* _____IMPORTANT____ */
+    /* _____IMPORTANT____ */
+    /* _____IMPORTANT____ */
+    /* you center the SVG by fixing container size */
+    .hero_maps_and_description_container {
+        /* background-color: blue; */
+        width: 70vw;
+        max-width: 70vw;  
+        height: fit-content;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .menu_page_ul li {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width : 600px) {
+
+    .m-button {
+        margin-top: 20px;
+        padding-top: 2px;
+        padding-bottom: 4px;
+        border-radius: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        animation: paddingmore 1s ease-in-out infinite;
+        transition: padding 0.5s ease-in-out, background-color 0.5s ease-in-out;
+    }
+    .m-button-land {
+        background-color: var(--svg_land);
+    }
+
+    .m-button-beach {
+        background-color: var(--svg_beach) ;
+    }
+
+    .m-button-islets {
+        background-color: var(--svg_islets);
+    }
+    
+    @keyframes paddingmore {
+        0%, 100% {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        50% {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 1400px) {
+
+    
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero_container {
+        position: relative;
+        height: 90vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hero_text_container {
+        display:flex;
+        flex-direction: row;
+    }
+
+    .hero_text_container, .hero_geoje {
+        position: absolute;
+        top: 2.5vh;
+        padding: 0.5vh;
+        gap: 100px;
+        font-size: 2rem;
+    }
+
+    .hero_maps_and_description_container {
+        height:fit-content;
+    }
+}

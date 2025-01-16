@@ -1,0 +1,174 @@
+.apic {
+    margin-top: 2vw;
+    background-color: inherit;
+    position: relative;
+    width: 90vw;
+    height: 90vh;
+    margin-bottom: 4vw;
+}
+
+/*   text */
+
+.apic > p:not(.apic > p:nth-child(1)) {
+    font-family: var(--merryweather);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    padding: 5px;
+    z-index: 10;
+    width: 35vw;
+}
+
+
+.apic > p:nth-child(1) {
+    padding: 5px;
+    font-size: 1.5rem;
+    margin-bottom: 2vw;
+}
+
+.apic > p {
+    
+}
+
+.apii {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+}
+
+                                                    
+/* MOUNTAIN SUNNY */
+/* mountain shadow   */
+.mount {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 24%;
+
+    border-top: 0px solid transparent;
+    border-right: 15vw solid transparent;
+    border-bottom: 60vh solid hwb(131 5% 53%);
+    border-left: 15vw solid transparent;
+    z-index: 5;
+}
+
+.msh {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left:40.52%;
+    border-top: 0px solid transparent;
+    border-right: 10vw solid transparent;
+    border-bottom: 60vh solid rgb(22, 83, 22);
+    border-left: 0vw solid transparent;
+    z-index: 5;
+    transform-origin: top right;
+    transform: skewX(14deg);
+}
+/*                     */
+
+
+.mount1 {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+
+    border-top: 0px solid transparent;
+    border-right: 15vw solid transparent;
+    border-bottom: 40vh solid hwb(131 12% 44%);
+    border-left: 15vw solid transparent;
+    z-index: 6;
+}
+
+.msh1 {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left:66.5%;
+    border-top: 0px solid transparent;
+    border-right: 10vw solid transparent;
+    border-bottom: 40vh solid rgb(20, 93, 20);
+    border-left: 0vw solid transparent;
+    z-index: 6;
+    transform-origin: top right;
+    transform: skewX(16deg);
+}
+
+/*                                        */
+
+.mount2 {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 45%;
+
+    border-top: 0px solid transparent;
+    border-right: 15vw solid transparent;
+    border-bottom: 80vh solid hwb(44 14% 18%);
+    border-left: 15vw solid transparent;
+    z-index: 3;
+}
+
+.msh2 {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left:61.5%;
+    border-top: 0px solid transparent;
+    border-right: 10vw solid transparent;
+    border-bottom: 80vh solid  hwb(44 18% 45% / 0.959);
+    border-left: 0vw solid transparent;
+    z-index: 3;
+    transform-origin: top right;
+    transform: skewX(10deg);
+}
+
+.mount3 {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 32%;
+
+    border-top: 0px solid transparent;
+    border-right: 15vw solid transparent;
+    border-bottom: 50vh solid hwb(0 14% 23%);
+    border-left: 15vw solid transparent;
+    z-index: 2;
+}
+
+.msh3 {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left:48.5%;
+    border-top: 0px solid transparent;
+    border-right: 10vw solid transparent;
+    border-bottom: 50vh solid  hwb(0 2% 69% / 0.448);
+    border-left: 0vw solid transparent;
+    z-index: 2;
+    transform-origin: top right;
+    transform: skewX(14deg);
+}
+
+.skw{
+    transform: skewX(3deg);
+}
+
+.mo {
+    opacity: .4;
+}
+
+@media screen and (max-width: 800px) {
+    .mo {
+        opacity: .2;
+    }
+    .apic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

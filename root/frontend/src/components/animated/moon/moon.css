@@ -1,0 +1,63 @@
+.moon {
+    z-index: 2;
+    width: 100px;
+    height: 100px;
+    background-color: var(--moon);
+    box-shadow: 0px 0px 40px 22px var(--moon);     /* h v blur spread color  */
+    border-radius: 50%;
+    position: absolute;
+    
+    animation: animate_moon var(--moon_sun_night) infinite;
+    animation-timing-function: ease-in-out;
+    transition: background-color 0.5s ease-in-out, box-shadow 0.6s ease-in-out;    /* :hover transition: */
+}
+
+/* set the color.     on click > new page: play a typescript game set during the night (Naedo = 2D adventure island Tombi-like OST*/
+.moon:hover{
+    cursor: pointer;
+    background-color: var(--moonhover);
+    box-shadow: 0px 0px 40px 22px var(--moonhover);   
+}
+
+/* animation */
+/* https://css-tricks.com/snippets/css/keyframe-animation-syntax/ */
+@keyframes animate_moon {
+    0%, 100% { 
+        /* while sun is over there... */
+        right: 80vw;
+        top: 130vh;
+        opacity: 0.5;
+        box-shadow: 0px 0px 10px 5px var(--moon);   
+     }
+     50% { 
+        /* moon rises from bottom: */
+        right: 80vw;
+        top: 130vh;
+        opacity: 0.7;
+        box-shadow: 0px 0px 0px 10px var(--moon);   
+    }
+     65% { 
+        /* moon rises from bottom: */
+        opacity: 0.8;
+        box-shadow: 0px 0px 0px 10px var(--moon);   
+    }
+    75% {
+        /* mid night: */
+        right: 30vw;
+        top: 10vh;
+        opacity: 1;
+        box-shadow: 0px 0px 80px 45px var(--moon);   
+    }
+    98% {
+        /* moon goes down: */
+        right: -30vw;
+        top: 30vh;
+        opacity: 0.8;
+        box-shadow: 0px 0px 25px 12px var(--moon);   
+    }
+    99% {
+        /* moon goes back to start (hidden) */
+        right: -30vh;
+        top: 110vh;
+    } 
+}

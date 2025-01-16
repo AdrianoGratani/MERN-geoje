@@ -1,0 +1,75 @@
+
+span {
+    /* 'absorb' the color night when covers this container:  set opacity to 0*/
+    background-color: var(--sky_rgba);
+}
+
+.space {
+    padding: 0.5vw;
+}
+
+.title {
+    /* 'absorb' the color night when covers this container:  set opacity to 0*/
+    background-color: var(--sky_rgba);
+    font-family: var(--playwrite);
+    font-size: 8vh;
+    /* prevent 'j' span from hide the bottom: */
+    padding-bottom: 7px;
+}
+
+/* 
+  --red:  #FF6F61;
+  --tangerine: #FFB347;  
+  --yellow: #FFC300;
+  --green: #84DE02; 
+  --pink: #FF85B3; 
+  --redtwo :#FF7676;
+  --coral: #F79D84;
+*/
+
+.title_letter_t {
+    color: var(--red);
+}
+.title_letter_h {
+    color: var(--tangerine);
+}
+.title_letter_e {
+    color: var(--pink);
+}
+.title_letter_l {
+    color: var(--red);
+}
+.title_letter_a {
+    color: var(--tangerine);
+}
+.title_letter_n {
+    color: var(--coral);
+}
+.title_letter_d {
+    color: var(--pink);
+}
+.title_letter_o {
+    color: var(--coral);
+}
+.title_letter_f {
+    color: var(--coral);
+}
+.title_letter_g {
+    color: var(--red);
+}
+.title_letter_ee {
+    color: var(--red);
+}
+.title_letter_oo {
+    color: var(--red);
+}
+.title_letter_j {
+    color: var(--red);
+}
+.title_letter_eee {
+    color: var(--red);
+}
+
+.geoje {
+    font-size: 9vh;
+}

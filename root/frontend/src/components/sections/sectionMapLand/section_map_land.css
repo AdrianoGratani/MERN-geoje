@@ -1,0 +1,79 @@
+.single_map_section_container_land {
+/* becuase it stores absolutely positioned items. */
+position: relative;
+}
+
+/* ICONS */
+
+.m_icon_container {
+    border-radius:  10px;
+    padding: 4px;
+
+    position: absolute;
+    /* top: 100px;
+    left: 600px; */
+    background-color: var(--moon);
+    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+.m_icon_container:hover {
+    z-index: 1000;
+    padding: 15px;
+    border-radius:  30px;
+    background-color: var(--svg_land_icons);
+    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+
+/* EFFECT BASED ON CONTEXT */
+.m_icon_effect {
+    z-index: 1000;
+    padding: 15px;
+    border-radius:  30px;
+    background-color: var(--svg_land_icons);
+    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+
+
+.geoje_land_svg {
+    width: 600px;
+    min-width: 600px;
+    max-width: 600px;
+    margin: 1vw;
+    
+}
+
+@media screen and (max-width: 600px) {
+    
+    
+    .single_map_section_container_land {
+        /* background-color: red; */
+        /* width:100vw;
+        height:90vh; */
+        display: flex;
+        justify-content: center;
+        /* margin-right: 5vw; */
+        margin-bottom: 10vh;
+    }
+    
+    .geoje_land_svg {
+        margin:0;
+    }
+}
+
+@media screen and (min-width: 601px){
+
+    .map_and_icons_container {
+        /* background-color: blue; */
+    }
+    
+    .single_map_section_container_land {
+        /* background-color: red; */
+        width: 35vw;
+        /* margin-right: 5vw; */
+    }
+    
+    .geoje_land_svg {
+        width: 28vw;
+        min-width: inherit;
+        max-width: inherit;
+    }
+}

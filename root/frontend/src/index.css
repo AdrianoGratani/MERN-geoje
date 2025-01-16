@@ -1,0 +1,126 @@
+/* HEADER TITLE: Playwrite England SemiJoined */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+/* Merriweather */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+/* Atkinson */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+:root {
+  /* FONTS */
+  --atkinson: "Atkinson Hyperlegible", sans-serif;
+  --merryweather: "Merriweather", serif;
+  --playwrite: "Playwrite GB S", serif;
+
+  --weight_regular: 400;
+  --weight_bold: 700;
+  --weight_black: 900;
+  --weight_light: 300;
+
+  --size_regular: 2vh;
+  --size_ext_text: 1.5rem;
+  --size_ext_description: 1.2rem;
+
+  --size_regular_big: 3vh;
+  --size_title: 4rem;
+  --size_subtitle: 2rem;
+  --size_ext_subtitle: 3rem;
+  --size_hero: 5rem;
+  --size_hero_big: 8rem;
+
+  /* WEBSITE COLOR PALETTE */
+
+  --orangebittersweet: #F25757;
+  --yellowmaize: #F2E863;
+  --yellownaples: #F2CD60;
+  
+  --sun: #FFC300;        
+  --evening :#FF7676;
+  --sunhover: #FF5733;
+  --moon: #EAF2E3;          
+  --moon_icon_land: hwb(92 89% 5% / 0.384);          
+  --moonhover: #1C1C3C; 
+
+  /* island animation page */
+  --skyblue: #6495ED;          /* day */
+  --skybluetwo: #5D8AA8;       /* gray day */
+  --skybluethree: #B0E0E6;     /* less gray day */
+  --skybluefour: #CCCCFF;      /* delicate blue gray day */
+  --skyblue: #00BFFF;          /* light turquoise day */
+  --sky_rgba: rgba(135, 206, 235, 0); /* for header title: opacity is set to 0 */
+  --sea: #61E8E1;      
+  --seatwo: #87CEEB;       /* sea */
+  --night: #003366;  /* night */
+  --night_two: #0F4C81;  /* night */
+  --deeppurple: #5C4B8A;    /* night */
+  --red:  #FF6F61;
+  --tangerine: #FFB347;  
+  --green: #181b13; 
+  --pink: #FF85B3; 
+  --redtwo :#FF7676;
+  --coral: #F79D84;
+  --svg_islets: rgb(63, 169, 245);
+  --svg_beach: rgb(252, 238, 33);
+  --svg_land:  rgb(43, 137, 64);
+  --svg_land_icons:  rgb(91, 185, 111);
+  
+  /* sections, background: */
+  --section_islets: hwb(205 24% 4% / 0.115);
+  --section_beach: hwb(56 13% 1% / 0.363);
+  --section_land:  hwb(133 17% 46% / 0.267); ;
+  /* cards: */
+  --card_mainland_name: hwb(133 14% 39% / 0.124);;
+  --card_land:  hwb(133 17% 46% / 0.124);;
+  --card_land_hover:  hwb(133 17% 46% / 0.34);
+  --card_icon_mainland: hwb(34 57% 23%);
+  --card_sea: hwb(56 13% 1% / 0.252);
+  --card_sea_hover: hwb(56 13% 1% / 0.637);
+  --card_icon_sea: hwb(5 38% 0% / 0.632);
+  --card_islets: hwb(205 24% 4% / 0.197);
+  --card_islets_hover: hwb(205 24% 4% / 0.473);
+  --card_icon_islets:hwb(92 89% 5% / 0.318);
+  --card_effect: hwb(155 24% 4% / 0.658);
+  --m_icon_effect: hwb(155 24% 4% / 0.658);
+  --is_icon: hwb(54 13% 0% / 0.438);
+  --icon_land_effect: hwb(155 24% 4%);
+  --icon_effect: hwb(205 0% 3% / 0.863);
+  --islet_icon_hovered: hwb(182 0% 0% / 0.445);
+  --card_islets_effect: hwb(205 0% 0% / 0.973);
+  --s_icon: hwb(56 13% 1% / 0.548);
+  --s_icon_hover: hwb(56 0% 0%);
+  --s_card_effect: hwb(56 13% 1% / 0.856);
+  
+  /* external cards */
+  --ext_card_land:  hwb(133 17% 46% / 0.322);
+  --ext_card_sea:  hwb(56 0% 0% / 0.479);
+  --ext_card_islets: hwb(205 0% 0% / 0.39);
+  --ext_card_text: hwb(205 0% 0% / 0.39);
+
+
+  /* sizes */
+
+  /* durations keyframes*/
+  --moon_sun_night: 30s;
+
+  /* z-index (objects / text / containers etc) */
+  --sun_moon_z: 8;
+  --cloud_z: 6;
+  --night_z: 4;
+  --text_z: 10;
+
+  /* radius */
+  --radius_cards: 10px;
+  --radius_cards_hover: 20px;
+
+  /* margins */
+  --margin_small_h: 2vh;
+  --margin_small_w: 2vw;
+  --margin_smallbig_h: 6vh;
+  --margin_smallbig_w: 6vw;
+
+  /* paddings */
+  --padding_xxxsmall: 10px;
+  --padding_small_h: 1vh;
+  --padding_small_w: 1vw;
+  --padding_smallbig_h: 2vh;
+  --padding_smallbig_w: 2vw;
+}

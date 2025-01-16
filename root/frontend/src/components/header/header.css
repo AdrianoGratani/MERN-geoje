@@ -1,0 +1,8 @@
+.header_title_container {
+    display: inline-block;
+    position: relative;
+    z-index: var(--text_z);
+    
+    /* 'absorb' the color night when covers this container:  set opacity to 0*/
+    background-color: var(--sky_rgba);
+}

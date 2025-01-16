@@ -1,0 +1,231 @@
+/* EXTERNAL GENERAL CARD LAYOUT */
+
+.ext_card_container {
+    background-color: var(--ext_card_land);
+    width: 100%;
+    height: 0%;
+    position: relative;
+    transition: height 2s ease-in-out;
+}
+
+    
+/* .anim {
+    position: absolute;
+    width: 20vw;
+    height: 30vh;
+    opacity: 0.4;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);   
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%); 
+} 
+*/
+
+.ext_card_text_container {
+    /* background-color: red; */
+    margin: 20px;
+    margin-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+}
+/* 
+.animation_on_open {
+    animation: page_opened_change_bg 1s 1;
+}
+
+@keyframes page_opened_change_bg {
+    0% {
+        opacity: 0;        
+    }
+    100% {
+        opacity: 100;
+    }
+} */
+
+
+/* INFOS */
+/* mainland */
+
+.ext_card_title_container {
+    /* background-color: blue; */
+    justify-content: center;
+    align-items: center;
+}
+.ext_card_title {
+    font-size: 2.5vw;
+    text-align: center;
+    color: rgb(0, 48, 12);
+    padding: 5px;
+}
+.ext_card_infos_subtitle {
+    font-size: 2vw;
+    text-align: center;
+    color: rgb(92, 153, 107);
+    padding: 5px;
+}
+.ext_card_infos_container p {
+    font-family: var(--merryweather);
+    font-size: 1.2vw;
+    color: rgb(0, 48, 12);
+    margin-bottom: 3px;
+}
+
+/* infos islets */
+.ext_card_islets_title {
+    font-size: 2.5vw;
+    color: hwb(212 2% 73%);
+    text-align: center;
+    padding-bottom: 10px;
+}
+.ext_card_islets_infos_subtitle {
+    font-size: 2vw;
+    color: hwb(211 79% 3%);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.ext_card_islets_infos_container p {
+    font-family: var(--merryweather);
+    font-size: 1.3vw;
+    color: hwb(212 2% 73%);
+    margin-bottom: 3px;
+}
+
+.ext_card_description_title {
+    margin-top: var( --margin_small_h) ;
+    font-size: 1vw; 
+    background-color: white;
+    width:fit-content;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+.ext_card_islets_description_container p {
+    color: hwb(212 2% 73%);
+    font-weight: bold;
+    font-size: 1vw; 
+    line-height: 2.5rem;
+}
+
+/* seaside */
+
+.ext_card_seaside_title {
+    font-size:2.5vw;
+    color: hwb(9 1% 61%);
+    text-align: center;
+    padding-bottom: 10px;
+}
+.ext_card_seaside_infos_subtitle {
+    font-size: 2vw;
+    color: hwb(8 28% 50%);
+    text-align: center;
+    padding-bottom: 10px;
+}
+.ext_card_seaside_infos_container p{
+    font-family: var(--merryweather);
+    font-size: 1.4vw;
+    color: hwb(9 1% 61%);
+    margin-bottom: 3px;
+}
+
+
+.ext_card_islets_description_container p {
+    color: hwb(212 2% 73%);
+    font-weight: bold;
+    font-size: 1.2rem; 
+    line-height: 2.5rem;
+}
+
+/* EXTERNAL CARD MAINLAND */
+
+.ext_card_container_appears {
+    animation: appear 0.5s ease-in-out;
+    height: 100%;
+}
+
+.ext_card_container_fades {
+    transition: height 0.5s ease-in-out;
+    height: 0%;
+}
+
+/* EXTERNAL CARD SEASIDE */
+
+.ext_sea_card_container {
+    background-color: var(--ext_card_sea);
+    width: 100%;
+    height: 0%;
+    position: relative;
+    transition: height 2s ease-in-out;
+}
+
+.ext_sea_card_container_appears {
+    animation: appear 0.5s ease-in-out;
+    height: 100%;
+}
+
+.ext_sea_card_container_fades {
+    transition: height 0.5s ease-in-out;
+    height: 0%;
+}
+
+/* EXTERNAL CARD ISLETS */
+.ext_islet_card_container {
+    background-color: var(--ext_card_islets);
+    width: 100%;
+    height: 0%;
+    position: relative;
+    transition: height 2s ease-in-out;
+}
+
+.ext_islet_card_container_appears {
+    animation: appear 0.5s ease-in-out;
+    height: 100%;
+}
+
+.ext_islet_card_container_fades {
+    transition: height 1s ;
+    height: 0%;
+}
+
+.ext_card_title_appears {
+    animation: title_appears 0.6s ;
+}
+
+/* EXTERNAL CARD ANIMATIONS */ 
+
+@keyframes title_appears {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes appear {
+    0% {
+        opacity: 0;
+        height: 0%;
+    }
+    
+    100% {
+        opacity: 1;
+        height: 100%;
+    }
+}
+
+@keyframes fade {
+    0%, 20% {
+        height: 100%;
+    }
+    50% {
+        height: 50%;
+    }
+    100% {
+        height: 0%;
+    }
+}
+
+

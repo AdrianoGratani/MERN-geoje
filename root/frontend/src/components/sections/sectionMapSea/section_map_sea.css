@@ -1,0 +1,65 @@
+.map_and_icons_container {
+    width: 700px;
+    min-width: 700px;
+    max-width: 700px;
+    display: flex;
+}
+
+.single_map_section_container_sea {
+    position: relative;
+    /* background-color: yellow; */
+}
+
+/* icons */
+
+.s_icon_container {
+
+    border-radius: 10px;
+    padding: 4px;
+    background-color: var(--moon);
+    transition: background-color 0.3s ease-in-out, padding  0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+.s_icon_container:hover {
+    z-index: 1000;
+    padding: 15px;
+    border-radius:  30px;
+    background-color: var(--svg_beach);
+    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+.seaside_hovered_card_icon_effect {
+    z-index: 1000;
+    padding: 15px;
+    border-radius:  30px;
+    background-color: var(--svg_beach);
+    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+
+        .single_map_section_container_sea {
+        /* background-color: red; */
+        /* width:100vw;
+        height:90vh; */
+        display: flex;
+        justify-content: center;
+        /* margin-right: 5vw; */
+        margin-bottom: 10vh;
+    }
+    
+    .geoje_land_svg {
+        margin:0;
+    }
+}
+
+@media screen and (min-width: 601px) and(max-width: 1400px) {
+    .single_map_section_container_sea {
+        width: 35%;
+    }
+    
+    .sea_geoje_land_svg {
+        width: 28vw;
+        min-width: inherit;
+        max-width: inherit;
+    }
+
+}

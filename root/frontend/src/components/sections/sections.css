@@ -1,0 +1,40 @@
+
+.map_sections_container {
+    /* background-color: red; */
+    width: 99%;
+    border-radius: 15px;
+}
+
+/* the section general style: */
+.single_section_container {
+    /* background-color: blue; */
+    height: 100%;
+    width: 100%;
+    margin-bottom: var(--margin_small_w);
+    display: flex;
+    flex-direction: row;
+}
+
+.s_land {
+    background-color: var(--section_land);
+}
+
+.s_sea {
+    background-color: var(--section_beach);
+}
+
+.s_islets {
+    background-color: var(--section_islets);
+}
+
+@media screen and (max-width: 600px) {
+    .single_section_container {
+        /* background-color: blue; */
+        height: 100%;
+        width: 100%;
+        margin-bottom: var(--margin_small_w);
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}

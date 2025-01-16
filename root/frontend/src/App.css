@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* avoid changing bg color here in App.css */
+    /* background-color: var(--skyblue); */
+    /* prevent animated items from generating scrolls on page overflow: */
+    overflow: hidden;
+    /* animation: daylight_changes var(--moon_sun_night) linear infinite; */
+}
+
+.body_elements_container {
+    margin: 1vh;
+}
+
+/* issues with the header title box */
+/* 
+@keyframes daylight_changes {
+    0%, 100% {
+        background-color: var(--skyblue);
+    }
+    50% {
+        background-color: var(--skybluetwo);
+        
+    }
+    99% {
+        background-color: var(--skybluetwo);
+    }
+    
+} */
+
